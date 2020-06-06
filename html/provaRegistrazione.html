@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="http://localhost/monopattino/css/stile.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://localhost/monopattino/js/script.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".menu").click(function () { 
+        $(".container").load("http://localhost/monopattino/php/menu.php?menu=" + this.id);
+      });
+    });	
+  </script>
+
+  <div class="jumbotron text-center bg-primary">
+    <h1>Monopattiniamo.it</h1>
+    <h5>Il sito dove troverai i migliori monopattini ai prezzi più bassi.</h5>
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="http://localhost/monopattino/html/index.html" class="nav-link menu" id="1">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu" id="2">Cerca</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu" id="3">Aria riservata</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu" id="4">Contatti</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+              <h2>Area riservata ai venditori</h2>
+              <h5>Per registrarti devi inviare un'email a <a href="fs.sorrentino@gmail.com">fs.sorrentino@gmail.com</a> inserendo i dati della tua attività.</h5>
+              <h5>Una volta verificati i tuoi dati, ti verranno fornite una username e una password per poterti registrare come rivenditore.</5>
+              <br><br>
+                <form action="http://localhost/monopattino/php/login.php" method="POST">
+                <div class="form-group">
+                  <label for="usr">Username:</label>
+                  <input type="text" class="form-control" id="usr" name="username">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" id="pwd" name="password">
+                </div>
+                <button type="submit" class="btn btn-primary accedi">Accedi</button>
+              </form>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <h3>Se sei un rivenditore e ti vuoi registrare al nostro sito, clicca il pulsante qui sotto</h3>
+            <form action="https://www.mrwebmaster.it">
+              <button type="submit" class="btn btn-success">Registrati</button>
+            </div>
+        </div>
+    
+</body>
+
+</html>

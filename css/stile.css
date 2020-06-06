@@ -1,0 +1,15 @@
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+.fotoTabella{
+width: 150px;
+}
+.testoTabella{
+display:table-cell;
+vertical-align:middle;
+text-align: center;
+}
+#sceltaElimina{
+    text-align: center;
+}
