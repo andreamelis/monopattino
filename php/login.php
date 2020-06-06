@@ -56,6 +56,7 @@ if ($conn->connect_error) {
     <div class="col-sm-12">
       <div class="container">
         <?php
+        
         $sql = "SELECT id_rivenditore FROM rivenditori WHERE nome_rivenditore = '" . $nomeUtente . "' AND password_rivenditore = '" . $passwordUtente . "'";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
